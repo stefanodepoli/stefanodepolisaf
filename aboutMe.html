@@ -19,8 +19,8 @@
     <header>
         <div class="logo">Stefano De Poli</div>
         <div class="dropdown-container">
-            <button id="dropdown-btn">Menu</button>
-            <div class="dropdown-content">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
                 <a href="itaIndex.html">italiano</a>
                 <a href="index.html">home</a>
                 <a href="contacts.html">contacts</a>
@@ -28,6 +28,22 @@
             </div>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article>
        <div class="presentation">
          <h1>about me</h1>
@@ -129,8 +145,8 @@
     <header>
       <div class="logo">Stefano De Poli</div>
       <div class="dropdown-container">
-          <button id="dropdown-btn">Menu</button>
-          <div class="dropdown-content">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
               <a href="itaIndex.html">italiano</a>
               <a href="index.html">home</a>
               <a href="contacts.html">contacts</a>
@@ -138,6 +154,22 @@
           </div>
       </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn3');
+          var menuList = document.querySelector('.dropdown-content3');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-about">
     <div class="text-about">
         <div class="presentation">
@@ -217,7 +249,7 @@
     </div>
     <div class="img-about">
       <figure>
-        <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
+        <img src="assets portfolio/img/io.jpg" style="height: 110px; width:110px;" alt="my foto"> <br>
                   <figcaption>
                     De Poli Stefano <br>
                     via Oleggio Castello 54 (NO) <br>
@@ -246,8 +278,8 @@
               <li><a href="contacts.html">contacts</a></li>
               <li>
                 <div class="dropdown-container">
-                   <button id="dropdown-btn">portfolio</button>
-                   <div class="dropdown-content">
+                   <button id="dropdown-btn2">portfolio</button>
+                   <div class="dropdown-content2">
                      <a href="portfolio.html">all projects</a>
                      <a href="sitiPortfolio/casaJennifer/index.html">casa jennifer</a>
                      <a href="sitiPortfolio/basketGalliera/index.html">basket galliera</a>
@@ -259,6 +291,22 @@
            </nav>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn2');
+          var menuList = document.querySelector('.dropdown-content2');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-about">
       <div class="text-about">
           <div class="presentation">
@@ -338,7 +386,7 @@
       </div>
       <div class="img-about">
         <figure>
-          <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
+          <img src="assets portfolio/img/io.jpg" style="height: 150px; width:150px;" alt="my foto"> <br>
                     <figcaption>
                       De Poli Stefano <br>
                       via Oleggio Castello 54 (NO) <br>
@@ -380,6 +428,22 @@
            </nav>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn');
+          var menuList = document.querySelector('.dropdown-content');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-about">
       <div class="text-about">
           <div class="presentation">
@@ -459,7 +523,7 @@
       </div>
       <div class="img-about">
         <figure>
-          <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
+          <img src="assets portfolio/img/io.jpg" style="height: 240px; width: 240px;" alt="my foto"> <br>
                     <figcaption>
                       De Poli Stefano <br>
                       via Oleggio Castello 54 (NO) <br>

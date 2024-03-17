@@ -19,8 +19,8 @@
     <header>
         <div class="logo">Stefano De Poli</div>
         <div class="dropdown-container">
-            <button id="dropdown-btn">Menu</button>
-            <div class="dropdown-content">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
                 <a href="itaIndex.html">italiano</a>
                 <a href="index.html">home</a>
                 <a href="aboutMe.html">about me</a>
@@ -28,6 +28,22 @@
             </div>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-port">
       <div class="artportf">
         <h2>I will explain my plans soon</h2>
@@ -46,8 +62,8 @@
     <header>
       <div class="logo">Stefano De Poli</div>
       <div class="dropdown-container">
-          <button id="dropdown-btn">Menu</button>
-          <div class="dropdown-content">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
               <a href="itaIndex.html">italiano</a>
               <a href="index.html">home</a>
               <a href="aboutMe.html">about me</a>
@@ -55,6 +71,23 @@
           </div>
       </div>
   </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.querySelector('#dropdown-btn3');
+        var menuList = document.querySelector('.dropdown-content3');
+
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+
+        window.addEventListener('click', function(e) {
+            if (!menuButton.contains(e.target)) {
+                menuList.classList.remove('active');
+            }
+        });
+    });
+  </script>
+
   <article class="art-port">
     <div class="artportf">
       <h2>I will explain my plans soon</h2>

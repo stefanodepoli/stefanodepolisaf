@@ -19,8 +19,8 @@
     <header>
         <div class="logo">Stefano De Poli</div>
         <div class="dropdown-container">
-            <button id="dropdown-btn">Menu</button>
-            <div class="dropdown-content">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
                 <a href="index.html">english</a>
                 <a href="itaIndex.html">home</a>
                 <a href="chiSono.html">chi sono</a>
@@ -28,10 +28,27 @@
             </div>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
+
     <article class="art-port">
       <div class="artportf">
         <h2>Presto spiegherò i miei progetti</h2>
-        <p>ti espetto a breve di nuovo sul mio sito</p>
+        <p>ti aspetto a breve di nuovo sul mio sito</p>
       </div>
     </article>
     <footer>
@@ -46,8 +63,8 @@
     <header>
       <div class="logo">Stefano De Poli</div>
       <div class="dropdown-container">
-          <button id="dropdown-btn">Menu</button>
-          <div class="dropdown-content">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
               <a href="index.html">english</a>
               <a href="itaIndex.html">home</a>
               <a href="chiSono.html">chi sono</a>
@@ -55,10 +72,26 @@
           </div>
       </div>
   </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.querySelector('#dropdown-btn3');
+        var menuList = document.querySelector('.dropdown-content3');
+
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+
+        window.addEventListener('click', function(e) {
+            if (!menuButton.contains(e.target)) {
+                menuList.classList.remove('active');
+            }
+        });
+    });
+  </script>
   <article class="art-port">
     <div class="artportf">
         <h2>Presto spiegherò i miei progetti</h2>
-        <p>ti espetto a breve di nuovo sul mio sito</p>
+        <p>ti aspetto a breve di nuovo sul mio sito</p>
     </div>
   </article>
   <footer>
@@ -86,7 +119,7 @@
     <article class="art-port">
       <div class="artportf">
         <h2>Presto spiegherò i miei progetti</h2>
-        <p>ti espetto a breve di nuovo sul mio sito</p>
+        <p>ti aspetto a breve di nuovo sul mio sito</p>
       </div>
     </article>
     <footer>
@@ -105,7 +138,7 @@
              <ul class="nav">
               <li><a href="index.html">english</a></li>
               <li><a href="itaIndex.html">home</a></li>
-              <li><a href="chiSono.html">chi siamo</a></li>
+              <li><a href="chiSono.html">chi sono</a></li>
               <li><a href="contatti.html">contatti</a></li>
              </ul>
            </nav>
@@ -114,7 +147,7 @@
     <article class="art-port">
       <div class="artportf">
         <h2>Presto spiegherò i miei progetti</h2>
-        <p>ti espetto a breve di nuovo sul mio sito</p>
+        <p>ti aspetto a breve di nuovo sul mio sito</p>
       </div>
     </article>
     <footer>

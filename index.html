@@ -19,20 +19,36 @@
     <header>
         <div class="logo">Stefano De Poli</div>
         <div class="dropdown-container">
-            <button id="dropdown-btn">Menu</button>
-            <div class="dropdown-content">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
                 <a href="itaIndex.html">italiano</a>
                 <a href="aboutMe.html">about me</a>
                 <a href="contacts.html">contacts</a>
-                <a href="portfolio/portfolio.html">portfolio</a>
+                <a href="portfolio.html">portfolio</a>
             </div>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <div class="img-screen">
       <img src="assets portfolio/img/sfondosmart.jpg" alt="foto ambiente di lavoro">
        <div class="center-container">
           <h1>Stefano De Poli</h1>
-          <h2>Web Developer student vertMobile</h2>
+          <h2>Web Developer;   plc programmer; (vertMobile)</h2>
           <a href="portfolio.html" class="portfolio-button">Portfolio</a>
        </div>
     </div>
@@ -48,20 +64,36 @@
     <header>
       <div class="logo">Stefano De Poli</div>
       <div class="dropdown-container">
-          <button id="dropdown-btn">Menu</button>
-          <div class="dropdown-content">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
               <a href="itaIndex.html">italiano</a>
               <a href="aboutMe.html">about me</a>
               <a href="contacts.html">contacts</a>
-              <a href="portfolio/portfolio.html">portfolio</a>
+              <a href="portfolio.html">portfolio</a>
           </div>
       </div>
   </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.querySelector('#dropdown-btn3');
+        var menuList = document.querySelector('.dropdown-content3');
+
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+
+        window.addEventListener('click', function(e) {
+            if (!menuButton.contains(e.target)) {
+                menuList.classList.remove('active');
+            }
+        });
+    });
+  </script>
   <div class="img-screen">
-    <img src="assets portfolio/img/sfondosmart.jpg" alt="foto ambiente di lavoro">
+    <img src="assets portfolio/img/copia2.jpg" alt="foto ambiente di lavoro">
      <div class="center-container">
         <h1>Stefano De Poli</h1>
-        <h2>Web Developer student orizMobile</h2>
+        <h2>Web Developer,plc programmer (orizMobile)</h2>
         <a href="portfolio.html" class="portfolio-button">Portfolio</a>
      </div>
   </div>
@@ -76,33 +108,49 @@
   <div class="tablet">
     <header>
       <div class="logo">Stefano De Poli</div>
-        <div class="line-container">
-           <nav>
-             <ul class="nav">
-              <li><a href="itaIndex.html">italiano</a></li>
-              <li><a href="aboutMe.html">about me</a></li>
-              <li><a href="contacts.html">contacts</a></li>
-              <li>
-                <div class="dropdown-container">
-                   <button id="dropdown-btn">portfolio</button>
-                   <div class="dropdown-content">
-                     <a href="portfolio.html">all projects</a>
-                     <a href="sitiPortfolio/casaJennifer/index.html">casa jennifer</a>
-                     <a href="sitiPortfolio/basketGalliera/index.html">basket galliera</a>
-                     <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
+      <div class="line-container">
+        <nav>
+          <ul class="nav">
+            <li><a href="itaIndex.html">italiano</a></li>
+            <li><a href="aboutMe.html">about me</a></li>
+            <li><a href="contacts.html">contacts</a></li>
+            <li>
+              <div class="dropdown-container">
+                 <button id="dropdown-btn2">PORTFOLIO</button>
+                   <div class="dropdown-content2">
+                      <a href="portfolio.html">all projects</a>
+                      <a href="sitiPortfolio/casaJennifer/index.html">casa jennifer</a>
+                      <a href="sitiPortfolio/basketGalliera/index.html">basket galliera</a>
+                       <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
                     </div>
-                  </div>
-              </li>
-             </ul>
-           </nav>
-        </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn2');
+          var menuList = document.querySelector('.dropdown-content2');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <div class="img-screen">
       <img src="assets portfolio/img/copia2.jpg" alt="foto ambiente di lavoro">
        <div class="center-container">
           <h1>Stefano De Poli</h1>
-          <h2>Web Developer student tablet</h2>
-          <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+          <h2>Web Developer,plc programmer (tablet)</h2>
+          <a href="portfolio.html" class="portfolio-button">PORTFOLIO</a>
        </div>
      </div>
      <footer>
@@ -116,42 +164,59 @@
   <div class="desktop">
     <header>
       <div class="logo">Stefano De Poli</div>
-        <div class="line-container">
-           <nav>
-             <ul class="nav">
-              <li><a href="itaIndex.html">italiano</a></li>
-              <li><a href="aboutMe.html">about me</a></li>
-              <li><a href="contacts.html">contacts</a></li>
-               <li>
-                <div class="dropdown-container">
-                   <button id="dropdown-btn">PORTFOLIO</button>
+      <div class="line-container">
+        <nav>
+          <ul class="nav">
+            <li><a href="itaIndex.html">italiano</a></li>
+            <li><a href="aboutMe.html">about me</a></li>
+            <li><a href="contacts.html">contacts</a></li>
+            <li>
+              <div class="dropdown-container">
+                 <button id="dropdown-btn">PORTFOLIO</button>
                    <div class="dropdown-content">
-                     <a href="portfolio.html">all projects</a>
-                     <a href="sitiPortfolio/casaJennifer/index.html">casa jennifer</a>
-                     <a href="sitiPortfolio/basketGalliera/index.html">basket galliera</a>
-                     <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
+                      <a href="portfolio.html">all projects</a>
+                      <a href="sitiPortfolio/casaJennifer/index.html">casa jennifer</a>
+                      <a href="sitiPortfolio/basketGalliera/index.html">basket galliera</a>
+                       <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
                     </div>
-                  </div>
-               </li>
-             </ul>
-           </nav>
-        </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn');
+          var menuList = document.querySelector('.dropdown-content');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <div class="img-screen">
       <img src="assets portfolio/img/copia2.jpg" alt="foto ambiente di lavoro">
        <div class="center-container">
           <h1>Stefano De Poli</h1>
-          <h2>Web Developer student desktop</h2>
+          <h2>Web Developer,plc programmer (desktop)</h2>
           <a href="portfolio.html" class="portfolio-button">Portfolio</a>
        </div>
     </div>
     <footer>
       <div class="foot">
       <p>De Poli Stefano</p> 
-      <p>de poli saf snc</p>
-      <p>p.iva 0452352141</p>
+      <p>copyrait Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, reiciendis! Quod maxime, vel placeat consequuntur</p>
       </div>
     </footer>
   </div>
+
 </body>
 </html>

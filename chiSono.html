@@ -19,8 +19,8 @@
     <header>
         <div class="logo">Stefano De Poli</div>
         <div class="dropdown-container">
-            <button id="dropdown-btn">Menu</button>
-            <div class="dropdown-content">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
                 <a href="index.html">english</a>
                 <a href="index.html">home</a>
                 <a href="contatti.html">contatti</a>
@@ -28,13 +28,28 @@
             </div>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article>
-       <div class="presentation">
-         <h1>chi sono</h1>
-         <h2>mi chiamo Stefano De Poli, sono un web developer</h2>
-         <h3>creo e mantengo siti web e applicazioni</h3>
-       </div>
-       <div class="img-about">
+      <div class="presentation">
+        <h1>Stefano De Poli</h1>
+        <h2>web developer e programmatore plc</h2>
+        <h3>creo e mantengo siti web e applicazioni,realizzazione disegni elettrici delle componenti elettrici di automazione</h3>
+      </div>       <div class="img-about">
           <figure>
              <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
                <figcaption>
@@ -44,51 +59,53 @@
                 </figcaption>
           </figure>
         </div>
-      <div class="text-about">
+        <div class="text-about">
           <p>
-           l'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
-            <!--Art and technology have always fascinated me, one day it will become my only job.-->
+         L'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
+              <!--Art and technology have always fascinated me, one day it will become my only job.-->
           </p>
           <p>
-            nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
-               e manca poco ... la seconda sfida è imparare a programmare , è una sfida dura , ma bellissima <br>
-              <!-- In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost
-                 time...the second challenge is learning to program, it's a tough but beautiful challenge. <br>-->
-            ci vorrà un tempo ma sono entusiasto per entrambe le sfide
-             <!-- It will take a while but I'm excited for both challenges.-->
+            Nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
+               e manca poco ... la seconda sfida è imparare a programmare , è una sfida non sempre facile, ma la trovo bellissima; 
+              <!-- In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost time...
+                the second challenge is learning to program, it's a tough but beautiful challenge. <br>-->
+            ci vorrà tempo,pazienza,dedizione, ma sono entusiasto per entrambe le sfide e sono convinto che
+             questo porterà a dei risultati.
+              <!--   It will take a while but I'm excited for both challenges.-->
           </p>
           <p>
             
            Ciò che mi entusiasma di più in queste prime esperienze è pensare a qualcosa e relizzarlo,oppure ascoltare un cliente,
-              capire cosa vuole e poterlo realizzare,questo è bellissimo.
-               per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing. <br>
-               <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to
-                 a customer,understanding what they want and being able to make it happen,
-                this is beautiful. This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing
-                concepts.-->
-           vivo questa esperienza e questa sfida con questo aforisma di giorge bernard
-            <!-- I live this experience and this challenge with this aphorism from giorge bernard-->
+            capire cosa vuole e poterlo realizzare ,
+            <span style="font-family: Georgia, 'Times New Roman';  font-weight: bold; "> fantastico !</span> <br>
+            Per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing. <br>
+            <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to a customer,
+            understanding what they want and being able to make it happen,
+            this is beautiful. This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing concepts.-->
+           Vivo questa esperienza e questa sfida con questo aforisma di Giorge Bernard :
+             <!--I live this experience and this challenge with this aphorism from giorge bernard-->
           </p>
           <p>
-           le persone che progrediscono nella vita sono coloro che si danno da fare 
-               per trovare le circostanze che vogliono , se non le trovano, le creano
-               <!-- people who progress in life are those who work hard to find the circumstances they want,
-                if they don't find them, they create them    -->  
+            <span style="font-weight: bold;">
+              Le persone che progrediscono nella vita sono coloro che si danno da fare 
+            per trovare le circostanze che vogliono , se non le trovano, le creano !
+              <!-- people who progress in life are those who work hard to find the circumstances they want,
+                if they don't find them, they create them  -->
+            </span>
           </p>
           <p>
-            Adoro questa frase per due motivi,il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart,
-           il secondo motivo è un pò lo spirito
-           con cui vedo la programmazione,ovvero l'idea che si può sempre creare qualcosa di più efficace o che sia più bello o
-            più vendibile.
-           <!-- I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
+           Adoro questa frase per due motivi , il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart , 
+           il secondo motivo è un pò lo spirito con cui vedo la programmazione , ovvero l'idea che si può sempre creare qualcosa 
+           di più efficace o magari più bello o più vendibile.
+             <!--I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
              the second reason is a bit the spirit with which I see programming, that is, the idea that something more can always be
-              created effective or more beautiful or more salable.-->
+            created effective or more beautiful or more salable.-->
           </p>
       
       <div class="experience">
         <h2>ESPERIENZE</h2>
         <P>
-          una gran carriera inizia con i primi passi, ecco i miei primi passi : <br>
+          una gran carriera inizia con i primi passi, ecco i miei primi passi :
           <!--a great career begins with the first steps, here are my first steps: -->      
           <UL>
             <li>progetto di introduzione al corso di web developer all'accademia start2impact</li>
@@ -98,18 +115,18 @@
                  ho creato diverse collaborazioni</li>
             <li>il primo vero lavoro commissionato per un azienda che gestisce vari b&b con scadenza per la realizzazione 
                 gennaio 2025 </li>
-          </UL>
+        </UL>
         </P>
       </div>
       <div class="skill">
         <h2>CONOSCENZE</h2>
         <p>
-          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA
+          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA / SIEMENS PLC / SIMULATORE PLC (EASYPLC)
         </p>
       </div>
       <p>
-       non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
-           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti
+        Non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
+           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti.
            <!-- I haven't had the opportunity to work in a team yet but I hope to carry out some collaborative projects
             in the coming months, communication and collaboration are important factors at work-->
       </p>
@@ -117,7 +134,6 @@
         <a href="contatti.html">contatti</a>
       </button>
       </div>
-      
   </article>
   <footer>
     <div class="foot">
@@ -131,8 +147,8 @@
     <header>
       <div class="logo">Stefano De Poli</div>
       <div class="dropdown-container">
-          <button id="dropdown-btn">Menu</button>
-          <div class="dropdown-content">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
               <a href="index.html">english</a>
               <a href="itaIndex.html">home</a>
               <a href="contatti.html">contatti</a>
@@ -140,57 +156,77 @@
           </div>
       </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn3');
+          var menuList = document.querySelector('.dropdown-content3');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-about">
-    <div class="text-about">
-        <div class="presentation">
-          <h1>chi sono</h1>
-          <h2>mi chiamo Stefano De Poli, sono un web developer</h2>
-          <h3>creo e mantengo siti web e applicazioni</h3>
-        </div>
-        <p>
-        l'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
-          <!-- Art and technology have always fascinated me, one day it will become my only job.-->
-        </p>
-        <p>
-        nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
-        e manca poco ... la seconda sfida è imparare a programmare , è una sfida dura , ma bellissima <br>
-        <!-- In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost time...
-        the second challenge is learning to program, it's a tough but beautiful challenge. <br>-->
-        ci vorrà un tempo ma sono entusiasto per entrambe le sfide
-        <!--It will take a while but I'm excited for both challenges.-->
-        </p>
-        <p>
-          
-         Ciò che mi entusiasma di più in queste prime esperienze è pensare a qualcosa e relizzarlo,oppure ascoltare un cliente,
-            capire cosa vuole e poterlo realizzare,questo è bellissimo. <br>
-            Per questo, qualche volta,oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing.
-             <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to
-             a customer,understanding what they want and being able to make it happen,this is beautiful. 
-             This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing concepts.-->
-          vivo questa esperienza e questa sfida con questo aforisma di giorge bernard
-          <!--I live this experience and this challenge with this aphorism from giorge bernard-->
-        </p>
-        <p>
-         le persone che progrediscono nella vita sono coloro che si danno da fare 
-             per trovare le circostanze che vogliono , se non le trovano, le creano
-             <!-- people who progress in life are those who work hard to find the circumstances they want,
-              if they don't find them, they create them  -->    
-        </p>
-        <p>
-         adoro questa frase per due motivi,il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart,
-         il secondo motivo è un pò lo spirito con cui vedo la programmazione,ovvero l'idea che si può sempre 
-         creare qualcosa di più efficace o che sia più bello o più vendibile.
-           <!--I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
-           the second reason is a bit the spirit with which I see programming, that is, the idea that something more can always be
+      <div class="text-about">
+          <div class="presentation">
+            <h1>Stefano De Poli</h1>
+            <h2>web developer e programmatore plc</h2>
+            <h3>creo e mantengo siti web e applicazioni,realizzazione disegni elettrici delle componenti elettrici di automazione</h3>
+          </div>
+          <p>
+         L'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
+              <!--Art and technology have always fascinated me, one day it will become my only job.-->
+          </p>
+          <p>
+            Nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
+               e manca poco ... la seconda sfida è imparare a programmare , è una sfida non sempre facile, ma la trovo bellissima; 
+              <!-- In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost time...
+                the second challenge is learning to program, it's a tough but beautiful challenge. <br>-->
+            ci vorrà tempo,pazienza,dedizione, ma sono entusiasto per entrambe le sfide e sono convinto che
+             questo porterà a dei risultati.
+              <!--   It will take a while but I'm excited for both challenges.-->
+          </p>
+          <p>
+            
+           Ciò che mi entusiasma di più in queste prime esperienze è pensare a qualcosa e relizzarlo,oppure ascoltare un cliente,
+            capire cosa vuole e poterlo realizzare ,
+            <span style="font-family: Georgia, 'Times New Roman';  font-weight: bold; "> fantastico !</span> <br>
+            Per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing. <br>
+            <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to a customer,
+            understanding what they want and being able to make it happen,
+            this is beautiful. This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing concepts.-->
+           Vivo questa esperienza e questa sfida con questo aforisma di Giorge Bernard :
+             <!--I live this experience and this challenge with this aphorism from giorge bernard-->
+          </p>
+          <p>
+            <span style="font-weight: bold;">
+              Le persone che progrediscono nella vita sono coloro che si danno da fare 
+            per trovare le circostanze che vogliono , se non le trovano, le creano !
+              <!-- people who progress in life are those who work hard to find the circumstances they want,
+                if they don't find them, they create them  -->
+            </span>
+          </p>
+          <p>
+           Adoro questa frase per due motivi , il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart , 
+           il secondo motivo è un pò lo spirito con cui vedo la programmazione , ovvero l'idea che si può sempre creare qualcosa 
+           di più efficace o magari più bello o più vendibile.
+             <!--I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
+             the second reason is a bit the spirit with which I see programming, that is, the idea that something more can always be
             created effective or more beautiful or more salable.-->
-        </p>
-    
-    <div class="experience">
-      <h2>ESPERIENZE</h2>
-      <P>
-        una gran carriera inizia con i primi passi, ecco i miei primi passi
-        <!--a great career begins with the first steps, here are my first steps:-->       
-        <UL>
+          </p>
+      
+      <div class="experience">
+        <h2>ESPERIENZE</h2>
+        <P>
+          una gran carriera inizia con i primi passi, ecco i miei primi passi :
+          <!--a great career begins with the first steps, here are my first steps: -->      
+          <UL>
             <li>progetto di introduzione al corso di web developer all'accademia start2impact</li>
             <li>primo vero progetto del corso web developer dell'accademia start2impact,realizzare questo sito portfolio</li>
             <li>progetto realizzato per l'azienda che gestisce il bar di famiglia</li>
@@ -199,36 +235,36 @@
             <li>il primo vero lavoro commissionato per un azienda che gestisce vari b&b con scadenza per la realizzazione 
                 gennaio 2025 </li>
         </UL>
-      </P>
-    </div>
-    <div class="skill">
-      <h2>CONOSCENZE</h2>
+        </P>
+      </div>
+      <div class="skill">
+        <h2>CONOSCENZE</h2>
+        <p>
+          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA / SIEMENS PLC / SIMULATORE PLC (EASYPLC)
+        </p>
+      </div>
       <p>
-        c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA
+        Non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
+           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti.
+           <!-- I haven't had the opportunity to work in a team yet but I hope to carry out some collaborative projects
+            in the coming months, communication and collaboration are important factors at work-->
       </p>
-    </div>
-    <p>
-      non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
-         progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti
-        <!-- I haven't had the opportunity to work in a team yet but I hope to carry out some collaborative projects
-          in the coming months, communication and collaboration are important factors at work-->
-    </p>
-    <button>
-      <a href="contatti.html">contatti</a>
-    </button>
-    </div>
-    <div class="img-about">
-      <figure>
-        <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
-                  <figcaption>
-                    De Poli Stefano <br>
-                    via Oleggio Castello 54 (NO) <br>
-                    28060 ITALY <br>
-                  </figcaption>
+      <button>
+        <a href="contatti.html">contatti</a>
+      </button>
+      </div>
+      <div class="img-about">
+        <figure>
+          <img src="assets portfolio/img/io.jpg" style="height: 110px; width:110px;" alt="my foto"> <br>
+                    <figcaption>
+                      De Poli Stefano <br>
+                      via Oleggio Castello 54 (NO) <br>
+                      28060 ITALY <br>
+                    </figcaption>
 
-      </figure>
-    </div>
-    </article>
+        </figure>
+      </div>
+  </article>
     <footer>
       <div class="foot">
       <p>De Poli Stefano</p> 
@@ -248,8 +284,8 @@
               <li><a href="contatti.html">contatti</a></li>
               <li>
                 <div class="dropdown-container">
-                   <button id="dropdown-btn">portfolio</button>
-                   <div class="dropdown-content">
+                   <button id="dropdown-btn2">portfolio</button>
+                   <div class="dropdown-content2">
                      <a href="itaportfolio.html">progetti</a>
                      <a href="sitiPortfolio/casaJennifer/index.html">casa jennifer</a>
                      <a href="sitiPortfolio/basketGalliera/index.html">basket galliera</a>
@@ -261,56 +297,76 @@
            </nav>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn2');
+          var menuList = document.querySelector('.dropdown-content2');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-about">
       <div class="text-about">
           <div class="presentation">
-            <h1>chi sono</h1>
-            <h2>mi chiamo Stefano De Poli, sono un web developer</h2>
-            <h3>creo e mantengo siti web e applicazioni</h3>
-            </div>
+            <h1>Stefano De Poli</h1>
+            <h2>web developer e programmatore plc</h2>
+            <h3>creo e mantengo siti web e applicazioni,realizzazione disegni elettrici delle componenti elettrici di automazione</h3>
+          </div>
           <p>
-           l'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
-           <!-- Art and technology have always fascinated me, one day it will become my only job.-->
+         L'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
+              <!--Art and technology have always fascinated me, one day it will become my only job.-->
           </p>
           <p>
-            nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
-               e manca poco ... la seconda sfida è imparare a programmare , è una sfida dura , ma bellissima <br>
-             <!--  In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost time...
+            Nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
+               e manca poco ... la seconda sfida è imparare a programmare , è una sfida non sempre facile, ma la trovo bellissima; 
+              <!-- In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost time...
                 the second challenge is learning to program, it's a tough but beautiful challenge. <br>-->
-            ci vorrà un tempo ma sono entusiasto per entrambe le sfide
-             <!-- It will take a while but I'm excited for both challenges.-->
+            ci vorrà tempo,pazienza,dedizione, ma sono entusiasto per entrambe le sfide e sono convinto che
+             questo porterà a dei risultati.
+              <!--   It will take a while but I'm excited for both challenges.-->
           </p>
           <p>
-            Ciò che mi entusiasma di più in queste prime esperienze è pensare a qualcosa e relizzarlo,oppure ascoltare un cliente,
-              capire cosa vuole e poterlo realizzare,questo è bellissimo. <br>
-               per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing.
-              <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to a customer,
-                understanding what they want and being able to make it happen,
-                this is beautiful. This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing concepts.-->
-            vivo questa esperienza e questa sfida con questo aforisma di giorge bernard
-            <!--I live this experience and this challenge with this aphorism from giorge bernard-->
+            
+           Ciò che mi entusiasma di più in queste prime esperienze è pensare a qualcosa e relizzarlo,oppure ascoltare un cliente,
+            capire cosa vuole e poterlo realizzare ,
+            <span style="font-family: Georgia, 'Times New Roman';  font-weight: bold; "> fantastico !</span> <br>
+            Per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing. <br>
+            <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to a customer,
+            understanding what they want and being able to make it happen,
+            this is beautiful. This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing concepts.-->
+           Vivo questa esperienza e questa sfida con questo aforisma di Giorge Bernard :
+             <!--I live this experience and this challenge with this aphorism from giorge bernard-->
           </p>
           <p>
-           le persone che progrediscono nella vita sono coloro che si danno da fare 
-               per trovare le circostanze che vogliono , se non le trovano, le creano
-              <!--  people who progress in life are those who work hard to find the circumstances they want,
-                if they don't find them, they create them -->     
+            <span style="font-weight: bold;">
+              Le persone che progrediscono nella vita sono coloro che si danno da fare 
+            per trovare le circostanze che vogliono , se non le trovano, le creano !
+              <!-- people who progress in life are those who work hard to find the circumstances they want,
+                if they don't find them, they create them  -->
+            </span>
           </p>
           <p>
-            adoro questa frase per due motivi,il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart,
-           il secondo motivo è un pò lo spirito
-           con cui vedo la programmazione,ovvero l'idea che si può sempre creare qualcosa di più efficace o che sia più bello o
-            più vendibile.
-            <!-- I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
+           Adoro questa frase per due motivi , il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart , 
+           il secondo motivo è un pò lo spirito con cui vedo la programmazione , ovvero l'idea che si può sempre creare qualcosa 
+           di più efficace o magari più bello o più vendibile.
+             <!--I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
              the second reason is a bit the spirit with which I see programming, that is, the idea that something more can always be
-              created effective or more beautiful or more salable.-->
+            created effective or more beautiful or more salable.-->
           </p>
       
       <div class="experience">
         <h2>ESPERIENZE</h2>
         <P>
-          una gran carriera inizia con i primi passi, ecco i miei primi passi:
-          <!--a great career begins with the first steps, here are my first steps:-->       
+          una gran carriera inizia con i primi passi, ecco i miei primi passi :
+          <!--a great career begins with the first steps, here are my first steps: -->      
           <UL>
             <li>progetto di introduzione al corso di web developer all'accademia start2impact</li>
             <li>primo vero progetto del corso web developer dell'accademia start2impact,realizzare questo sito portfolio</li>
@@ -325,13 +381,13 @@
       <div class="skill">
         <h2>CONOSCENZE</h2>
         <p>
-          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA
+          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA / SIEMENS PLC / SIMULATORE PLC (EASYPLC)
         </p>
       </div>
       <p>
-        non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
-           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti
-         <!--  I haven't had the opportunity to work in a team yet but I hope to carry out some collaborative projects
+        Non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
+           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti.
+           <!-- I haven't had the opportunity to work in a team yet but I hope to carry out some collaborative projects
             in the coming months, communication and collaboration are important factors at work-->
       </p>
       <button>
@@ -340,7 +396,7 @@
       </div>
       <div class="img-about">
         <figure>
-          <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
+          <img src="assets portfolio/img/io.jpg" style="height: 150px; width:150px;" alt="my foto"> <br>
                     <figcaption>
                       De Poli Stefano <br>
                       via Oleggio Castello 54 (NO) <br>
@@ -382,47 +438,66 @@
            </nav>
         </div>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn');
+          var menuList = document.querySelector('.dropdown-content');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
     <article class="art-about">
       <div class="text-about">
           <div class="presentation">
-            <h1>chi sono</h1>
-            <h2>mi chiamo Stefano De Poli, sono un web developer</h2>
-            <h3>creo e mantengo siti web e applicazioni</h3>
+            <h1>Stefano De Poli</h1>
+            <h2>web developer e programmatore plc</h2>
+            <h3>creo e mantengo siti web e applicazioni,realizzazione disegni elettrici delle componenti elettrici di automazione</h3>
           </div>
           <p>
-         l'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
+         L'arte e la tecnologia mi hanno sempre affascinato, un giorno diventerà il mio unico lavoro
               <!--Art and technology have always fascinated me, one day it will become my only job.-->
           </p>
           <p>
-            nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
-               e manca poco ... la seconda sfida è imparare a programmare , è una sfida dura , ma bellissima <br>
+            Nel 2023 ho lanciato due grandi sfide alla mia vita, la prima grande sfida è quella di diventare papà,
+               e manca poco ... la seconda sfida è imparare a programmare , è una sfida non sempre facile, ma la trovo bellissima; 
               <!-- In 2023 I launched two great challenges to my life, the first great challenge is to become a father, and it's almost time...
                 the second challenge is learning to program, it's a tough but beautiful challenge. <br>-->
-            ci vorrà un tempo ma sono entusiasto per entrambe le sfide
+            ci vorrà tempo,pazienza,dedizione, ma sono entusiasto per entrambe le sfide e sono convinto che
+             questo porterà a dei risultati.
               <!--   It will take a while but I'm excited for both challenges.-->
           </p>
           <p>
             
            Ciò che mi entusiasma di più in queste prime esperienze è pensare a qualcosa e relizzarlo,oppure ascoltare un cliente,
-            capire cosa vuole e poterlo realizzare,questo è bellissimo. <br>
-            per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing. <br>
+            capire cosa vuole e poterlo realizzare ,
+            <span style="font-family: Georgia, 'Times New Roman';  font-weight: bold; "> fantastico !</span> <br>
+            Per questo qualche volta oltre a sviluppare mi diverto a imparare anche concetti di grafica e di marketing. <br>
             <!-- What excites me most in these first experiences is thinking about something and making it happen, or listening to a customer,
             understanding what they want and being able to make it happen,
             this is beautiful. This is why sometimes, in addition to developing, I also enjoy learning graphics and marketing concepts.-->
-           vivo questa esperienza e questa sfida con questo aforisma di giorge bernard :
+           Vivo questa esperienza e questa sfida con questo aforisma di Giorge Bernard :
              <!--I live this experience and this challenge with this aphorism from giorge bernard-->
           </p>
           <p>
-            le persone che progrediscono nella vita sono coloro che si danno da fare 
-            per trovare le circostanze che vogliono , se non le trovano, le creano
+            <span style="font-weight: bold;">
+              Le persone che progrediscono nella vita sono coloro che si danno da fare 
+            per trovare le circostanze che vogliono , se non le trovano, le creano !
               <!-- people who progress in life are those who work hard to find the circumstances they want,
                 if they don't find them, they create them  -->
+            </span>
           </p>
           <p>
-           adoro questa frase per due motivi,il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart,
-           il secondo motivo è un pò lo spirito
-           con cui vedo la programmazione,ovvero l'idea che si può sempre creare qualcosa di più efficace o che sia più bello o
-            più vendibile.
+           Adoro questa frase per due motivi , il primo motivo è questa idea di cambiare la mia vita lavorativa e renderla più smart , 
+           il secondo motivo è un pò lo spirito con cui vedo la programmazione , ovvero l'idea che si può sempre creare qualcosa 
+           di più efficace o magari più bello o più vendibile.
              <!--I love this phrase for two reasons, the first reason is this idea of ​​changing my working life and making it smarter,
              the second reason is a bit the spirit with which I see programming, that is, the idea that something more can always be
             created effective or more beautiful or more salable.-->
@@ -447,12 +522,12 @@
       <div class="skill">
         <h2>CONOSCENZE</h2>
         <p>
-          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA
+          c++ / HTML / CSS / PHOTOSHOP / ADOBE ILLUSTRATOR / CANVA / SIEMENS PLC / SIMULATORE PLC (EASYPLC)
         </p>
       </div>
       <p>
-       non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
-           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti
+        Non ho ancora avuto l'opportunità di lavorare in team ma spero nei prossimi mesi di realizzare qualche
+           progetto in collaborazione, nel lavoro la comunicazione e la collaborazione sono fattori importanti.
            <!-- I haven't had the opportunity to work in a team yet but I hope to carry out some collaborative projects
             in the coming months, communication and collaboration are important factors at work-->
       </p>
@@ -462,7 +537,7 @@
       </div>
       <div class="img-about">
         <figure>
-          <img src="assets portfolio/img/io.jpg" style="height: 50%; width:50%;" alt="my foto"> <br>
+          <img src="assets portfolio/img/io.jpg" style="height: 240px; width: 240px;" alt="my foto"> <br>
                     <figcaption>
                       De Poli Stefano <br>
                       via Oleggio Castello 54 (NO) <br>

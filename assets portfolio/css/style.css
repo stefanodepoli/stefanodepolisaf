@@ -19,70 +19,56 @@
   {
     display: none;
   }
-  header
-  {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 18px 20px;
+    box-sizing: border-box;
     background-color: #333;
   }
-  
-  .logo
-  {
-    font-size: 20px;
+  .logo {
     color: white;
+    font-size: 25px;
+    margin-left: 8px;
     font-family: 'Great Vibes', cursive;
   }
-  
+  /* Stili del menu a tendina */
   .dropdown-container
   {
     position: relative;
+    margin-right: 13px;
   }
-  
-  #dropdown-btn 
+  #dropdown-btn4 
   {
     background-color: #887373;
-    padding: 8px 12px;
-    border: none;
+    padding: 8px 18px;
+    border: 1px solid white;
+    border-radius: 3px;
     cursor: pointer;
   }
-  
-  .dropdown-content 
-  { z-index: 1;
+  .dropdown-content4
+  {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color:#887373;
-    min-width: 120px;
+    background-color: #887373;
+    min-width: 180px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 5; /* Assicura che il menu sia sopra gli altri contenuti */
   }
-  
-  .dropdown-content a 
+  .dropdown-content4.active
+  {
+    display: block; /* Visualizza il menu quando ha la classe "active" */
+  }
+  .dropdown-content4 a 
   {
     display: block;
     padding: 10px;
+    color: #fff;
+    border: 1px solid black;
     text-decoration: none;
-    border: 1px solid white;
-    color: #333;
-  }
-  
-  /* Mostra il dropdown menu quando si preme il pulsante */
-  #dropdown-btn:focus + .dropdown-content 
-  {
-    display: block;
-  }
-  
-  /* Nasconde il dropdown menu quando si clicca al di fuori */
-  body 
-  {
-    cursor: pointer;
-  }
-  
-  .dropdown-container:focus-within .dropdown-content
-  {
-    display: block;
   }
   .img-screen 
   { 
@@ -133,7 +119,7 @@
     {
      font-size: 45px;
      text-align: center;
-     font-family: 'lato',cursive;
+     font-family: 'Great Vibes', cursive;
      padding-top: 15px;
     }
     .presentation h2
@@ -264,70 +250,56 @@
   {
     display: none;
   }
-  header
-  {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 18px 20px;
+    box-sizing: border-box;
     background-color: #333;
   }
-  
-  .logo 
-  {
-    font-size: 20px;
+  .logo {
     color: white;
+    font-size: 25px;
+    margin-left: 8px;
     font-family: 'Great Vibes', cursive;
   }
-  
-  .dropdown-container 
+  /* Stili del menu a tendina */
+  .dropdown-container
   {
     position: relative;
+    margin-right: 13px;
   }
-  
-  #dropdown-btn 
+  #dropdown-btn3 
   {
-    background-color:#887373;
-    padding: 8px 12px;
-    border: none;
+    background-color: #887373;
+    padding: 8px 18px;
+    border: 1px solid white;
+    border-radius: 3px;
     cursor: pointer;
   }
-  
-  .dropdown-content 
-  { z-index: 1;
+  .dropdown-content3
+  {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
     background-color: #887373;
-    min-width: 120px;
+    min-width: 180px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 5; /* Assicura che il menu sia sopra gli altri contenuti */
   }
-  
-  .dropdown-content a
+  .dropdown-content3.active
+  {
+    display: block; /* Visualizza il menu quando ha la classe "active" */
+  }
+  .dropdown-content3 a 
   {
     display: block;
     padding: 10px;
-    border: 1px solid white;
+    color: #fff;
+    border: 1px solid black;
     text-decoration: none;
-    color: #333;
-  }
-  
-  /* Mostra il dropdown menu quando si preme il pulsante */
-  #dropdown-btn:focus + .dropdown-content 
-  {
-    display: block;
-  }
-  
-  /* Nasconde il dropdown menu quando si clicca al di fuori */
-  body 
-  {
-    cursor: pointer;
-  }
-  
-  .dropdown-container:focus-within .dropdown-content 
-  {
-    display: block;
   }
   .img-screen 
   { 
@@ -389,7 +361,7 @@
     {
      font-size: 35px;
      text-align: center;
-     font-family: 'lato',cursive;
+     font-family: 'Great Vibes', cursive;
      padding-top: 55px;
     }
     .presentation h2
@@ -436,7 +408,7 @@
     }
     .text-about button
     {
-      margin: 20px 15%;
+      margin: 20px 25%;
       padding: 10px 15px;
       background-color:#333;
       border: 2px solid white;
@@ -449,14 +421,15 @@
     }
     .img-about img 
     {
-      margin-top: 30%;
-      margin-left: 20%;
-      }
+      position: fixed;
+      top: 30%;
+      left: 75%;   
+    }
     .img-about figcaption
     {
-      margin-top: 10%;
-     
-      margin-left: 20%;
+      position: fixed;
+      top: 70%;
+      left: 75%;   
      }
          /*pagina contacts*/
     article
@@ -528,10 +501,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 14px;
+    padding: 18px 20px;
     box-sizing: border-box;
     background-color: #333;
   }
+    
   .line-container li 
   {
     display:inline-block;
@@ -546,59 +520,52 @@
     color: black;
     background-color: #887373;
     transition: 0.3s;
-    margin-right: 35px;
-    padding: 8px 18px;
+    margin-right: 30px;
+    padding: 7px 16px;
     border: 1px solid white;
+    border-radius: 3px;
   }
   .logo {
     color: white;
-    font-size: 20px;
-    margin-left: 40px;
+    font-size: 25px;
+    margin-left: 8px;
     font-family: 'Great Vibes', cursive;
   }
-  .dropdown-container 
+  /* Stili del menu a tendina */
+  .dropdown-container
   {
     position: relative;
-    margin-right: 40px;
+    margin-right: 13px;
   }
-  
-  #dropdown-btn 
+  #dropdown-btn2 
   {
-    background-color:#887373;
-    padding: 8px 20px;
+    background-color: #887373;
+    padding: 8px 18px;
     border: 1px solid white;
+    border-radius: 3px;
     cursor: pointer;
   }
-  
-  .dropdown-content 
-  { z-index: 5;
+  .dropdown-content2 
+  {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
     background-color: #887373;
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 5; /* Assicura che il menu sia sopra gli altri contenuti */
   }
-  
-  .dropdown-content a 
-  { 
+  .dropdown-content2.active
+  {
+    display: block; /* Visualizza il menu quando ha la classe "active" */
+  }
+  .dropdown-content2 a 
+  {
     display: block;
     padding: 10px;
+    color: #fff;
     text-decoration: none;
-    min-width: 160px;
-    color: #333;
-  }
-  /* Mostra il dropdown menu quando si preme il pulsante */
-  #dropdown-btn:focus + .dropdown-content {
-    display: block;
-  }
-  /* Nasconde il dropdown menu quando si clicca al di fuori */
-  body {
-    cursor: pointer;
-  }
-  .dropdown-container:focus-within .dropdown-content {
-    display: block;
   }
   .img-screen 
   { 
@@ -658,21 +625,21 @@
   }
   .presentation h1
   {
-   font-size: 75px;
+   font-size: 45px;
    text-align: center;
-   font-family: 'lato',cursive;
+   font-family: 'Great Vibes', cursive;
    padding-top: 30px;
   }
   .presentation h2
   {
-   font-size: 45px;
+   font-size: 25px;
    text-align: center;
    font-family: 'lato', Arial, Helvetica, sans-serif;
    padding-top: 15px;
   }
   .presentation h3
   {
-   font-size: 45px;
+   font-size: 25px;
    text-align: center;
    font-family: 'lato', Arial, Helvetica, sans-serif;
    padding-top: 10px;
@@ -719,15 +686,16 @@
     color: #fff;
   }
   .img-about img 
-  {
-    margin-top: 30%;
-    margin-left: 20%;
+  { 
+    position: fixed;
+    top: 30%;
+    left: 72%;
     }
   .img-about figcaption
-  {
-    margin-top: 10%;
-   
-    margin-left: 20%;
+  { 
+    position: fixed;
+    top: 69%;
+    left: 70%;
     }
     /*pagina contacts*/
     article
@@ -793,14 +761,16 @@
   {
     display: none;
   }
+  /* Stili dell'header */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 13px 20px;
     box-sizing: border-box;
     background-color: #333;
   }
+    
   .line-container li 
   {
     display:inline-block;
@@ -818,29 +788,40 @@
     margin-right: 60px;
     padding: 8px 18px;
     border: 1px solid white;
+    border-radius: 3px;
+  }
+  .line-container a:hover
+  {
+    background-color: #5e0f0f;
+    color: white;
   }
   .logo {
     color: white;
-    font-size: 20px;
-    margin-left: 90px;
+    font-size: 33px;
+    margin-left: 100px;
     font-family: 'Great Vibes', cursive;
   }
-  .dropdown-container 
+  /* Stili del menu a tendina */
+  .dropdown-container
   {
     position: relative;
     margin-right: 50px;
   }
-  
   #dropdown-btn 
   {
-    background-color:#887373;
+    background-color: #887373;
     padding: 10px 22px;
     border: 1px solid white;
+    border-radius: 3px;
     cursor: pointer;
   }
-  
+  #dropdown-btn:hover 
+  {
+    background-color: #5e0f0f;
+    color: white;
+  }
   .dropdown-content 
-  { z-index: 2;
+  {
     display: none;
     position: absolute;
     top: 100%;
@@ -848,27 +829,18 @@
     background-color: #887373;
     min-width: 180px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 5; /* Assicura che il menu sia sopra gli altri contenuti */
   }
-  
+  .dropdown-content.active
+  {
+    display: block; /* Visualizza il menu quando ha la classe "active" */
+  }
   .dropdown-content a 
   {
     display: block;
     padding: 10px;
+    color: #fff;
     text-decoration: none;
-    min-width: 180px;
-    
-    color: #333;
-  }
-  /* Mostra il dropdown menu quando si preme il pulsante */
-  #dropdown-btn:focus + .dropdown-content {
-    display: block;
-  }
-  /* Nasconde il dropdown menu quando si clicca al di fuori */
-  body {
-    cursor: pointer;
-  }
-  .dropdown-container:focus-within .dropdown-content {
-    display: block;
   }
   .img-screen
   { 
@@ -934,7 +906,7 @@
   {
    font-size: 75px;
    text-align: center;
-   font-family: 'lato',cursive;
+   font-family: 'Great Vibes', cursive;
    padding-top: 30px;
   }
   .presentation h2
@@ -999,14 +971,15 @@
   }
   .img-about img 
   {
-    margin-top: 30%;
-    margin-left: 20%;
+    position: fixed;
+    top: 30%;
+    left: 72%;
     }
   .img-about figcaption
   {
-    margin-top: 10%;
-   
-    margin-left: 20%;
+    position: fixed;
+    top: 70%;
+    left: 72%;
     }
     /*pagina contacts*/
     article
